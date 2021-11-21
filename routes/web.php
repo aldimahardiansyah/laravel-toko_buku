@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PricelistController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pricelist', function () {
-    return view('pricelist', ['title' => 'PriceList']);
-});
+Route::get('/pricelist', [PricelistController::class, 'pricelist']);
