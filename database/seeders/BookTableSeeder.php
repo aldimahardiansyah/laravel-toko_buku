@@ -22,5 +22,14 @@ class BookTableSeeder extends Seeder
             'stok' => 32,
             'category_id' => 3
         ]);
+
+        Book::create([
+            'title' => 'Rusak Saja Buku Ini',
+            'author_id' => 2,
+            'category_id' => 6,
+            'cover' => 'rsbi',
+            'stok' => 12,
+            'price' => 50000
+        ]);
     }
 }

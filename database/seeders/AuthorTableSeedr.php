@@ -18,5 +18,10 @@ class AuthorTableSeedr extends Seeder
             'name' => 'Didik Setiawan',
             'email' => 'didieks@gmail.com'
         ]);
+
+        Author::create([
+            'name' => 'Sony Adams',
+            'email' => 'sondyadam21@gmail.com'
+        ]);
     }
 }
